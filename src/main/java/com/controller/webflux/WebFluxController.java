@@ -10,6 +10,10 @@ import static org.springframework.web.reactive.function.server.RouterFunctions.r
 
 import static org.springframework.web.reactive.function.server.RequestPredicates.GET;
 
+/**
+ * 反应式
+ * curl localhost:8080/time
+ */
 @Configuration
 public class WebFluxController {
 
