@@ -1,7 +1,6 @@
 package com.aop;
 
-import com.dbconfig.ChooseDataSourceUtils;
-import org.aopalliance.intercept.Joinpoint;
+import com.dbconfig.DynamicDataSourceContextHolder;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
@@ -17,6 +16,6 @@ public class AopConfig {
     public void before(JoinPoint joinPoint){
         String name = joinPoint.getSignature().getName();
         System.out.println(name);
-        ChooseDataSourceUtils.setChooseType("master");
+        DynamicDataSourceContextHolder.setChooseType("master");
     }
 }

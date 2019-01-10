@@ -1,6 +1,6 @@
 package com.dbconfig;
 
-public class ChooseDataSourceUtils {
+public class DynamicDataSourceContextHolder {
 
     private static final ThreadLocal<String> keyThreadLocal = new ThreadLocal<>();
 

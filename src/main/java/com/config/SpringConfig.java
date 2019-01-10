@@ -42,4 +42,6 @@ public class SpringConfig extends WebMvcConfigurationSupport {
 
         converters.add(fastJsonHttpMessageConverter);
     }
+
+
 }
