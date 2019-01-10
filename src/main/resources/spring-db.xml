@@ -28,7 +28,7 @@
     <bean id="masterDataSource" class="com.alibaba.druid.pool.DruidDataSource"
           init-method="init" destroy-method="close">
         <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://192.168.4.117:3306/admindb?characterEncoding=utf8"/>
+        <property name="url" value="jdbc:mysql://192.168.4.117:3306/admindb?characterEncoding=utf8&amp;useSSL=false"/>
         <property name="username" value="root"/>
         <property name="password" value="root"/>
 
@@ -59,7 +59,7 @@
     <bean id="slaveDataSource" class="com.alibaba.druid.pool.DruidDataSource"
           init-method="init" destroy-method="close">
         <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://192.168.4.117:3306/admindb?characterEncoding=utf8"/>
+        <property name="url" value="jdbc:mysql://192.168.4.117:3306/admindb?characterEncoding=utf8&amp;useSSL=false"/>
         <property name="username" value="root"/>
         <property name="password" value="root"/>
 
