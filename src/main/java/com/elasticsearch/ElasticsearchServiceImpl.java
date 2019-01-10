@@ -20,7 +20,7 @@ public class ElasticsearchServiceImpl {
 
     public Page<Products> demo(Pageable pageAble, String keyword) {
         NativeSearchQueryBuilder nativeSearchQueryBuilder = new NativeSearchQueryBuilder();
-        if(StringUtils.isEmpty(keyword)){
+        if(!StringUtils.isEmpty(keyword)){
             nativeSearchQueryBuilder.withQuery(queryStringQuery(keyword));
         }
         SearchQuery searchQuery = nativeSearchQueryBuilder.withPageable(pageAble).build();
