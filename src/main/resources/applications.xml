@@ -15,6 +15,5 @@
             http://www.springframework.org/schema/context/spring-context-3.0.xsd">
     <import resource="spring-db.xml"/>
     <import resource="spring-elasticsearch.xml"/>
-    <!--<import resource="spring-redis.xml"/>-->
-
+    <import resource="spring-redis.xml"/>
 </beans>
